@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#6FE0C4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -13,7 +14,7 @@
         android:layout_marginTop="112dp"
         android:fontFamily="cursive"
         android:text="@string/welcome"
-        android:textColor="#4CAF50"
+        android:textColor="#651FFF"
         android:textSize="60sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,33 +26,32 @@
         android:id="@+id/editName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#4CAF50"
         android:ems="10"
-        android:background="#75B3A8A8"
-        android:hint="@string/enter_the_name"
-        android:padding="5dp"
         android:gravity="center"
+        android:hint="@string/enter_the_name"
         android:inputType="textPersonName"
+        android:padding="5dp"
         app:layout_constraintBottom_toTopOf="@+id/btSubmit"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.369" />
 
     <Button
         android:id="@+id/btSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTintMode="add"
-        android:fontFamily="sans-serif-black"
-        android:hapticFeedbackEnabled="true"
-        android:text="@string/submit"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:text="View Your Card"
         android:textStyle="italic"
-        android:background="#7E57C2"
-        app:iconPadding="10dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.417" />
 
     <TextView
         android:id="@+id/textView2"
